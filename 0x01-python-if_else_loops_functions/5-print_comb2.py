@@ -1,4 +1,6 @@
 #!/usr/bin/python3
-for a in range(00, 99):
-        print("{}, ".format(str(a).zfill(2)), end='')
-print("99")
+for a in range(100):
+    if a < 99:
+        print('{:02d}, '.format(a), end='')
+    else:
+        print(a)
