@@ -15,6 +15,11 @@ def remove_char_at(str, n):
     str
         The copy of the string without the deleted position
     """
-if n < 0:
-    return (str)
-return (str[:n] + str [n+1:])
+
+ new_str = ""
+
+    for i in range(len(str)):
+        if i != n:
+            new_str += str[i]
+
+    return new_str
